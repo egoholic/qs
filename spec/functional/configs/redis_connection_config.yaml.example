@@ -1,0 +1,7 @@
+redis:
+  connection_params:
+    host: "localhost"
+    port:
+    path:
+    db:
+    password:

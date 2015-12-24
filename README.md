@@ -1,4 +1,5 @@
 # Qs
+[![Code Climate](https://codeclimate.com/github/egoholic/qs/badges/gpa.svg)](https://codeclimate.com/github/egoholic/qs)
 
 Qs is a lightweight and DB-agnostic library for querying.
 

@@ -6,11 +6,11 @@ require 'qs/version'
 Gem::Specification.new do |spec|
   spec.name          = "qs"
   spec.version       = Qs::VERSION
-  spec.authors       = ["Vladimir Melnik"]
+  spec.authors       = ["Volodymyr Melnyk"]
   spec.email         = ["egotraumatic@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.summary       = %q{Qs is a lightweight and DB-agnostic library for querying.}
+  spec.description   = %q{Qs is a lightweight and DB-agnostic library for querying.}
+  spec.homepage      = "http://itrampage.com"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")

@@ -61,7 +61,7 @@ RSpec.describe Qs, functional: true do
 
   let(:querier) { Qs.querier :main }
 
-  before :suite do
+  before do
     c = PG.connect pg_connection_params
 
     c.exec <<-SQL
@@ -69,12 +69,17 @@ CREATE TABLE IF NOT EXISTS tasks (
   title       VARCHAR(64) PRIMARY KEY,
   description TEXT        NOT NULL
 );
+
+TRUNCATE TABLE tasks;
+
+INSERT INTO tasks (title, description)
+  VALUES ('Task 1', 'Description for task 1.'),
+         ('Task 2', 'Description for task 2.'),
+         ('Task 3', 'Description for task 3.');
     SQL
 
     c.close
-  end
 
-  before do
     tasks.resources.add postgresql.name, postgresql
     tasks.resources.add redis.name, redis
 
@@ -85,25 +90,7 @@ CREATE TABLE IF NOT EXISTS tasks (
 
     c = Redis.new redis_connection_params
     c.flushall
-
-    c = PG.connect pg_connection_params
-
-    c.exec <<-SQL
-TRUNCATE TABLE tasks;
-INSERT INTO tasks (title, description)
-  VALUES ('Task 1', 'Description for task 1.'),
-         ('Task 2', 'Description for task 2.'),
-         ('Task 3', 'Description for task 3.');
-    SQL
-
-    c.close
-  end
-
-  after do
-    c = PG.connect pg_connection_params
-
-    c.exec("TRUNCATE TABLE tasks;")
-    c.close
+    c.quit
   end
 
   describe "querier" do

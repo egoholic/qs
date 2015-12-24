@@ -1,0 +1,7 @@
+postgresql:
+  connection_params:
+    user: "postgres"
+    host: "localhost"
+    port:
+    dbname:
+    password:

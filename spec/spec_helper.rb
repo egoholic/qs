@@ -1,3 +1,7 @@
+require "codeclimate-test-reporter"
+
+CodeClimate::TestReporter.start
+
 require "./lib/qs"
 
 RSpec.configure do |config|

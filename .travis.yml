@@ -1,0 +1,12 @@
+install:
+  - bundle install
+
+rvm:
+  - 2.1.8
+  - 2.2.4
+  #- 2.3.0
+  #- 2.4-head
+
+addons:
+  code_climate:
+    repo_token: 8f9b0ecf99f6475ddfaf3bc694448a5ecc68bd11384e2d7293218e70a3f6f09a

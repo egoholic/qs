@@ -1,5 +1,7 @@
 # Qs
+[![Build Status](https://travis-ci.org/egoholic/qs.svg)](https://travis-ci.org/egoholic/qs)
 [![Code Climate](https://codeclimate.com/github/egoholic/qs/badges/gpa.svg)](https://codeclimate.com/github/egoholic/qs)
+[![Test Coverage](https://codeclimate.com/github/egoholic/qs/badges/coverage.svg)](https://codeclimate.com/github/egoholic/qs/coverage)
 
 Qs is a lightweight and DB-agnostic library for querying.
 

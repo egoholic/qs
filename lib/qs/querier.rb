@@ -1,5 +1,7 @@
 module Qs
   class Querier
+    require "typed_map"
+
     attr_reader :name, :domains
 
     def initialize(name)

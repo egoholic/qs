@@ -4,6 +4,6 @@ source 'https://rubygems.org'
 gemspec
 
 group :test, :development do
-  gem "pg", "~> 0.18"
+  gem "pg"
   gem "redis"
 end

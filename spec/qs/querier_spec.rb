@@ -51,7 +51,7 @@ RSpec.describe Qs::Querier do
 
     describe "#domains" do
       it "returns typed map" do
-        expect(subject.domains).to be_instance_of Qs::TypedMap
+        expect(subject.domains).to be_instance_of TypedMap
       end
     end
 

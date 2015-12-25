@@ -37,13 +37,13 @@ RSpec.describe Qs::Domain do
 
     describe "#queries" do
       it "returns typed map" do
-        expect(subject.queries).to be_instance_of Qs::TypedMap
+        expect(subject.queries).to be_instance_of TypedMap
       end
     end
 
     describe "#resources" do
       it "returns typed map" do
-        expect(subject.resources).to be_instance_of Qs::TypedMap
+        expect(subject.resources).to be_instance_of TypedMap
       end
     end
 

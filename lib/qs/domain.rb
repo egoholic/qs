@@ -1,5 +1,7 @@
 module Qs
   class Domain
+    require "typed_map"
+
     attr_reader :name, :queries, :resources
 
     def initialize(name)

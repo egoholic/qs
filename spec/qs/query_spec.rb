@@ -2,7 +2,7 @@ RSpec.describe Qs::Query do
   let(:name)             { :find_by_title }
   let(:params_validator) { Qs.params_validator(title: {type: String, length_in: 3..64}) }
   let(:resource)         { Qs.resource :pg }
-  let(:resources)        { Qs::TypedMap.new(ktype: Symbol, vtype: Qs::Resource) }
+  let(:resources)        { TypedMap.new(ktype: Symbol, vtype: Qs::Resource) }
 
   let :executable do
     ->(resources, params) do

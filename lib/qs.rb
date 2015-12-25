@@ -1,7 +1,6 @@
 require "qs/version"
 
 module Qs
-  require "qs/typed_map"
   require "qs/querier"
   require "qs/resource"
   require "qs/domain"

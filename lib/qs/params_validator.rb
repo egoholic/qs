@@ -1,5 +1,6 @@
 module Qs
   class ParamsValidator
+    require "typed_map"
     require "qs/params_validator/param_validator"
 
     def initialize(param_defs)
